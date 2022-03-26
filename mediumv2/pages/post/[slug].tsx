@@ -9,7 +9,6 @@ interface Props {
 }
 
 function Post({ post }: Props) {
-    console.log(post);
     return (
         <main>
             <Navbar />
@@ -18,11 +17,11 @@ function Post({ post }: Props) {
 
             <article className="max-w-3xl mx-auto p-5">
                 {/* Title section */}
-                <h1 className="text-3xl mt-10 mb-3">
+                <h1 className="text-7xl mt-10 mb-3 font-serif font-bold">
                     {post.title}
                 </h1>
-                <h2 className="text-xl font-light text-gray-500 italic">
-                    {post.description}
+                <h2 className="first-letter:font-normal first-letter:text-3xl first-letter:font-serif text-xl  font-light text-gray-500 mb-10">
+                        "{post.description}"
                 </h2>
 
 
@@ -34,6 +33,7 @@ function Post({ post }: Props) {
                         dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
                         projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
                         content={post.body}
+                        className="space-y-3 "
                         serializers={{
                             h1: (props: any) => (<h1 className="text-2xl font-bold my-5"{...props} />),
                             h2: (props: any) => (<h2 className="text-xl font-bold my-5"{...props} />),
