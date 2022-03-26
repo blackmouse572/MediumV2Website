@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
+import Popup from 'reactjs-popup'
+import SignInPopUpButton from './SignInPopUp/SignInPopUpButton'
+
 
 function Navbar() {
   return (
@@ -11,15 +14,15 @@ function Navbar() {
             </Link>
             {/* Button */}
             <div className='hidden md:inline-flex items-center space-x-3'>
-                <h3>About</h3>
-                <h3>Contact</h3>
-                <h3 className="text-white bg-green-600 rounded-full px-4 py-1">Follow</h3>
+                <button>About</button>
+                <button>Contact</button>
+                <button className="text-white bg-green-600 rounded-full px-4 py-1">Follow</button>
             </div>
 
         </div>
         <div className='flex items-center space-x-5'>
-            <h3 className="text-green-600">Sign in</h3>
-            <h3 className="text-green-600 border-green-600 border-2 rounded-full px-4 py-1">Get started</h3>
+            <SignInPopUpButton/>
+            <button className="text-green-600 border-green-600 border-2 rounded-full px-4 py-1">Get started</button>
         </div>
     </header>
   )
