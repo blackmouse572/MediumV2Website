@@ -1,2 +1,6 @@
 mediumv2/.env.local
 mediumv2/.next
+mediumv2/node_modules
+../node_modules
+node_modules
+mediumv2/mediumv2/node_modules
