@@ -42,7 +42,7 @@ function Post({ post }: Props) {
                     {post.title}
                 </h1>
                 <h2 className="font-light text-gray-500 mb-10">
-                    "{post.description}"
+                    {post.description}
                 </h2>
                 <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
                 {/* Content section */}
@@ -157,7 +157,7 @@ function Post({ post }: Props) {
                 <hr className="py-5"/>
 
                 {post.comments.map((comment) => (
-                    <div className="border border-yellow-500 mb-5 rounded-xl px-5 py-5">
+                    <div key={comment._id} className="border border-yellow-500 mb-5 rounded-xl px-5 py-5">
                         <div className="bg-yellow-500 text-white p-3 rounded-xl flex items-center space-x-5 mb-2">
                             <img className="max-h-8 rounded-full "
                                 src="https://iptc.org/wp-content/uploads/2018/05/avatar-anonymous-300x300.png"/>

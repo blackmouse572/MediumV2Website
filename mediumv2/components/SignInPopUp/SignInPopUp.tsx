@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function SignInPopUp({ open, onClose }: { open: boolean, onClose: () => void }) {
@@ -55,20 +56,26 @@ function SignInPopUp({ open, onClose }: { open: boolean, onClose: () => void }) 
             </div>
 
             <div className="text-sm">
-              <a href="/" className="font-medium text-yellow-600 hover:text-yellow-500">
-                Forgot your password?
-              </a>
+
+              <Link href="/" >
+                <span className="font-medium text-yellow-600 hover:text-yellow-500">
+                  Forgot your password?
+                  </span>
+              </Link>
             </div>
           </div>
           <div>
 
             <button
               type="submit"
-              className="group relative w-full items-center flex justify-center py-2 px-4 border border-transparent font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+              className="group relative w-full items-center flex justify-center 
+              py-2 px-4 border border-transparent font-medium rounded-md 
+              text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none 
+              focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
             >
               Login
-              <span className='ml-1'><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              <span className='ml-1'><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
               </svg></span>
             </button>
             

@@ -10,7 +10,7 @@ function Banner() {
                 </span> space to write, read, and connect
             </h1>
             <h3 className="max-w-xl">
-                It's easy and free to post your thinking on any topic and connecting to millions of readers.
+                It&apos;s easy and free to post your thinking on any topic and connecting to millions of readers.
             </h3>
         </div>
         <div>
