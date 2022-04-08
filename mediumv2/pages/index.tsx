@@ -27,7 +27,7 @@ export default function Home({posts}: Props) {
                 urlFor(post.mainImage).url()} alt={post.title} className="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out " />
               <div className="flex justify-between p-5 bg-white align-items-center">
                 <div className="max-w-md">
-                  <p className="text-lg font-bold">{post.title}</p>
+                  <p className="text-lg font-bold group-hover:text-yellow-500">{post.title}</p>
                   <p className="text-sm">{post.description}</p>
                   <p className="font-medium font-serif italic text-right">By {post.author.name}</p>
                 </div>
