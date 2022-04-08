@@ -1,5 +1,5 @@
-mediumv2/.env.local
-mediumv2/.next
+.env.local
+.next
 mediumv2/node_modules
 ../node_modules
 node_modules
