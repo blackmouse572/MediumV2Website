@@ -7,6 +7,7 @@ export interface Post{
         name: string;
         image: string;
     };
+    comments: Comment[];
     slug: {
         current: string;
     };
@@ -16,4 +17,20 @@ export interface Post{
         }
     };
     body:[object];
+}
+export interface Comment {
+    _id: string;
+    name: string
+    comment: string;
+    title: string;
+    email: string;
+    aprroved: boolean;
+    post: {
+        _ref: string;
+        _type: string;
+    };
+    _createdAt: string;
+    _rev: string;
+    _type: string;
+    _updatedAt: string;
 }
